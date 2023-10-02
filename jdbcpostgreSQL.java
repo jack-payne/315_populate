@@ -44,7 +44,7 @@ public class jdbcpostgreSQL {
        //TODO: update the sql command here
        // Hint: Try using the SERIAL type to auto-generate Primary Keys
        // https://www.postgresqltutorial.com/postgresql-tutorial/postgresql-serial/
-       String sqlCreateStatement = "CREATE TABLE test (id SERIAL, num int);"; // user serial maybe
+       String sqlCreateStatement = "CREATE TABLE killman (id SERIAL, num int);"; // user serial maybe
        
        // True if a resultSet, false if int 
        // if Result set is available, use stmt.getResultSet() to retreive 
@@ -55,12 +55,12 @@ public class jdbcpostgreSQL {
        // This executeUpdate command is useful for updating data
        // This command returns the number of rows updated 
        // Note: If you know your query will not return a result set, you don't need to persist the statement
-       int rowsUpdated = conn.createStatement().executeUpdate("INSERT INTO test (num) VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10);");
+       int rowsUpdated = conn.createStatement().executeUpdate("INSERT INTO killman (num) VALUES (1), (2), (3), (4), (5), (6), (7), (8), (9), (10);");
        System.out.println("Rows Updated: " + rowsUpdated);
 
        //send statement to DBMS
        //This executeQuery command is useful for data retrieval
-       ResultSet result = conn.createStatement().executeQuery("SELECT * FROM test;");
+       ResultSet result = conn.createStatement().executeQuery("SELECT * FROM killmant;");
 
        //OUTPUT
        //You will need to output the results differently depeninding on which function you use
