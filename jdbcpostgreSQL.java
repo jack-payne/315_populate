@@ -60,7 +60,7 @@ public class jdbcpostgreSQL {
 
        //send statement to DBMS
        //This executeQuery command is useful for data retrieval
-       ResultSet result = conn.createStatement().executeQuery("SELECT * FROM killmant;");
+       ResultSet result = conn.createStatement().executeQuery("SELECT * FROM killman;");
 
        //OUTPUT
        //You will need to output the results differently depeninding on which function you use
